@@ -1,0 +1,114 @@
+.laydate_box{
+	// width: 240px;
+    font: 12px '\5B8B\4F53';
+    z-index: 99999999;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.1);
+    border-top: none;
+    border-bottom: none;
+    background-color: #fff;
+    color: #333;
+    position: absolute;
+    display:none;
+}
+.laydate_top{
+	position: relative;
+    height: 26px;
+    padding: 5px;
+    *width: 100%;
+    z-index: 99;
+    display:flex;
+    align-items:center;
+    // background-color:#0f0;
+}
+.laydate_top_center{
+	width:70%;
+	float:left;
+	flex:3;
+	text-align:center;
+	font-size:24px;
+	cursor:pointer;
+}
+
+.laydate_choose{
+	display: flex;
+    float: left;
+    position: relative;
+    width: 20px;
+    height: 24px;
+    color: #333;
+    flex:1;
+    justify-content:center;
+    align-items:center;
+}
+.laydate_box cite{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 5px;
+    border-style: dashed;
+    border-color: transparent;
+    overflow: hidden;
+    cursor: pointer;
+    border-right-style: solid;
+    border-right-color: #666;
+    left: 50%;
+    top: 50%;
+    margin-top: -5px;
+    marginLeft:-5px;
+}
+.laydate_tab{
+	float:right;
+	
+}
+.laydate_tab cite{
+	border-style: dashed;
+    border-color: transparent;
+	border-left-style: solid;
+    border-left-color: #666;
+}
+.laydate_table{
+	padding:5px;
+	// width:240px;
+	box-sizing: border-box;
+}
+.laydate_table tr{
+
+	display:flex;
+	width:100%;
+}
+.laydate_table th,.laydate_table td{
+	flex:1;
+	justify-content: center;
+    align-items: center;
+    display: flex;
+    border:none;
+    width:38px;
+    box-sizing:border-box;
+}
+.laydate_table td{
+	height:21px;
+	font-size:12px;
+	line-height:21px;
+	cursor:pointer;
+}
+
+.laydate_table td.laydate_month{
+	width:67px;
+	height:60px;
+}
+
+
+.calendar_green{
+	color:#fff;
+	background-color:#66be8c!important;
+}
+.calendar_gray{
+	background-color:#f5f5f5;
+}
+.laydate_table td:hover{
+	background-color:#ccc;
+	// border-radius:50%;
+}
+#prev_year,#next_year{
+	display:none;
+}
